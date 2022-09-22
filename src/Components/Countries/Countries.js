@@ -10,7 +10,6 @@ const Countries = () => {
     }, [])
     return (
         <div>
-            <h1>Welcome to Rest Countries- {countries.length}</h1>
             <div className='countries-container'>
                 {
                     countries.map(country => <Country key={country.cca3} country={country}></Country>)
